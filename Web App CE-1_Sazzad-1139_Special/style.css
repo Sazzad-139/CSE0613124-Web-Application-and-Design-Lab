@@ -1,0 +1,172 @@
+/* Size for all items */
+* {
+    box-sizing: border-box;
+}
+
+/* Page style */
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px 10px;
+    background: #ffffff;
+    color: #08104a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: 0 0 14px;
+    color: #153d50;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Routine box */
+.routine-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Routine rows and columns */
+.routine {
+    display: grid;
+    grid-template-columns: 130px repeat(8, minmax(140px, 1fr));
+    grid-template-rows: 42px repeat(5, 78px);
+    width: 100%;
+    min-width: 1250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid #111;
+    border-left: 1px solid #111;
+}
+
+/* Style for each cell */
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    padding: 6px;
+    border-right: 1px solid #111;
+    border-bottom: 1px solid #111;
+    overflow: hidden;
+    font-size: 11px;
+    line-height: 1.35;
+    text-align: center;
+}
+
+/* Heading style */
+.heading {
+    background: #35b5c1;
+    color: #063e50;
+    font-weight: 700;
+}
+
+.day {
+    background: #e9ebf0;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Break style */
+.break {
+    background: #f1f2f5;
+    color: #777d88;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* No class style */
+.no-class {
+    grid-column: span 8;
+    background: #f1f2f5;
+    color: #777d88;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Class text style */
+.course {
+    font-weight: 600;
+}
+
+/* Two classes at the same time */
+.shared {
+    flex-direction: column;
+    padding: 0;
+    font-weight: 600;
+}
+
+.shared span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    padding: 3px;
+}
+
+.shared span + span {
+    border-top: 1px solid #111;
+}
+
+/* Join 2 or 3 cells */
+.span-2 {
+    grid-column: span 2;
+}
+
+.span-3 {
+    grid-column: span 3;
+}
+
+/* Class colors */
+.yellow { background: #ffe958; }
+.purple { background: #d3a9c9; }
+.lavender { background: #d9cce8; }
+.green { background: #ccf2d4; }
+.peach { background: #ffc3a3; }
+.pink { background: #f4acbd; }
+.light-pink { background: #f6b7c4; }
+.red { background: #ff6382; }
+.blue { background: #b9e2f4; }
+.orange { background: #ffd58a; }
+
+/* Student information */
+.student-info {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.student-info h2,
+.student-info h3,
+.student-info h4,
+.student-info h5 {
+    margin: 6px 0;
+}
+
+.student-info h2 {
+    color: #153d50;
+    font-size: 22px;
+}
+
+.student-info h3,
+.student-info h4 {
+    font-size: 17px;
+}
+
+.student-info h5 {
+    color: #555;
+    font-size: 15px;
+}
+
+/* Mobile screen */
+@media (max-width: 700px) {
+    body {
+        padding: 12px 6px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}
