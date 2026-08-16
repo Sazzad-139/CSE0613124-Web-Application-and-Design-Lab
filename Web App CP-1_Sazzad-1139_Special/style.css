@@ -1,0 +1,285 @@
+/* =========================
+   General Style
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #1e293b;
+    padding: 50px 20px;
+}
+
+.page-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* =========================
+   Certificate
+========================= */
+
+.certificate {
+    background: #fffaf0;
+    padding: 14px;
+    border: 1px solid #e8cf8b;
+    box-shadow: 0 15px 45px rgba(120, 78, 12, 0.14);
+}
+
+.certificate-border {
+    min-height: 600px;
+    border: 5px solid #b8860b;
+    padding: 55px;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(135deg, #fffdf6 0%, #fff7df 50%, #fffdf6 100%);
+}
+
+.certificate-border::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid #d4af37;
+    pointer-events: none;
+}
+
+.certificate-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.certificate-header img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background: #2563eb;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.certificate-header h3 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: #7a5310;
+    text-transform: uppercase;
+}
+
+.certificate h1 {
+    font-family: Georgia, serif;
+    font-size: 65px;
+    letter-spacing: 8px;
+    color: #9a6b08;
+}
+
+.certificate h2 {
+    font-size: 19px;
+    letter-spacing: 8px;
+    color: #9b7a35;
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+
+.small-text {
+    font-size: 16px;
+    color: #806d46;
+    margin-bottom: 12px;
+}
+
+.student-name {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-style: italic;
+    color: #a87508;
+    margin: 10px 0;
+}
+
+.name-line {
+    width: 380px;
+    height: 1px;
+    background: #c6a85a;
+    margin: 10px auto 30px;
+}
+
+.description {
+    max-width: 700px;
+    margin: auto;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #665737;
+}
+
+.description strong {
+    color: #8a5d05;
+}
+
+.certificate-info {
+    margin-top: 65px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info {
+    width: 180px;
+    border-top: 1px solid #aa8738;
+    padding-top: 8px;
+}
+
+.info strong {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.info span {
+    font-size: 13px;
+    color: #806d46;
+}
+
+.seal {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background: transparent;
+    color: #7a5310;
+    border: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    position: relative;
+}
+
+.seal img {
+    width: 82px;
+    height: 82px;
+    object-fit: contain;
+}
+
+.seal span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 11px;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(72, 44, 0, 0.85);
+    z-index: 1;
+}
+
+
+/* =========================
+   Skills Section
+========================= */
+
+.skills-section {
+    margin-top: 60px;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 34px;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.skills-subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   Table
+========================= */
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+thead {
+    background: #2563eb;
+    color: white;
+}
+
+th {
+    padding: 16px 18px;
+    text-align: left;
+    font-size: 14px;
+}
+
+td {
+    padding: 17px 18px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+}
+
+tbody tr {
+    transition: 0.3s ease;
+}
+
+tbody tr:hover {
+    background: #eff6ff;
+}
+
+
+/* Skill Levels */
+
+.level {
+    display: inline-block;
+    padding: 0;
+    border-radius: 0;
+    background: transparent !important;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.advanced {
+    color: #000000;
+}
+
+.intermediate {
+    color: #000000;
+}
