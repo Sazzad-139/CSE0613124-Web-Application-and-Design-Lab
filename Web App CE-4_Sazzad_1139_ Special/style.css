@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+
+.container {
+  position: relative;
+  width: 670px;
+  height: 680px;
+  background-color: #ecd5ff;
+  border: 2px solid gray;
+  font-family: "Times New Roman", serif;
+}
+
+
+.box {
+  position: absolute;
+  left: 305px;
+  top: 115px;
+  width: 297px;
+  height: 297px;
+  border: 1px solid black;
+}
+
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.pink {
+  width: 78px;
+  height: 78px;
+  background-color: #b8366f;
+  left: 478px;
+  top: 94px;
+}
+
+.green {
+  width: 57px;
+  height: 57px;
+  background-color: #3fd69a;
+  left: 522px;
+  top: 193px;
+}
+
+
+.hello {
+  position: absolute;
+  left: 346px;
+  top: 202px;
+  width: 87px;
+  height: 47px;
+  background-color: lightblue;
+  text-align: center;
+  line-height: 47px;
+  font-size: 18px;
+}
+
+
+.chick-circle {
+  position: absolute;
+  left: 490px;
+  top: 300px;
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  background-color: white;
+  overflow: hidden;
+}
+
+.chick-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.welcome {
+  position: absolute;
+  left: 45px;
+  top: 250px;
+  width: 256px;
+  margin: 0;
+  text-align: center;
+  font-size: 58px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.welcome span {
+  display: block;
+}
+
+.welcome .gap {
+  margin-bottom: 70px;
+}
+
+.welcome span + span {
+  margin-top: 28px;
+}
